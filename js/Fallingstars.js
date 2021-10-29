@@ -5,7 +5,7 @@ $(document).ready(function(){
     // 点击切换搜素引擎
     // bing.com
     $("span.bing").click(function(){
-        $('.searchform').attr("action","http://cn.bing.com/search?q=");
+        $('.searchform').attr("action","http://cn.bing.com/search?wd=");
         $('span.bing').addClass('baco');
     });
     //baidu.com
