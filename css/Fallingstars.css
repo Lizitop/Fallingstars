@@ -1,5 +1,9 @@
 /* Fallingstars Css */
 
+html{
+    font-family: "Microsoft Yahei",sans-serif;
+}
+
 /* 最大的div样式 */
 div.Fallingstarsbox{
     background-image: url(https://img11.360buyimg.com/ddimg/jfs/t1/169620/24/21200/4247174/617a9347Eaa340f53/ccbfd669abac3b9e.jpg);
@@ -17,13 +21,35 @@ div.Fallingstarsbox{
 /* 最大内容盒子样式 */
 div.Fallingstarsbody{
     margin-top: 200px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    margin: auto
 }
 
-/* 搜索框样式 */
+/* 天气 */
+div.Wtdiv{
+    display: none;
+}
+.Wtddivs{
+    display: block;
+}
+/* 搜索框盒子样式 */
 div.FallingstarsSrearch{
     text-align: center;
-    align-items: center;
+    position: fixed;
+    width: 80%;
+    height: 320px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    left: 0px;
+    margin: auto
 }
+/* 搜索框样式 */
 input.ipsearch{
     background:none;
     backdrop-filter: blur(20px);
@@ -32,10 +58,50 @@ input.ipsearch{
     text-align: center;
     border-radius: 50px;
     height: 2.9rem;
-    width: 30%;
+    width: 80%;
     box-shadow: 0 5px 15px -5px rgba(0,0,0,1);
 }
+
 /* 去除type=search自带的清除内容样式 */
 input[type="search"]::-webkit-search-cancel-button{
     display: none;
+}
+
+/* 切换搜索引擎功能 样式 */
+div.Searchengine{
+    text-align: center;
+    position: fixed;
+    width: 50%;
+    height: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.Searchengine span{
+    margin: 10px;
+    text-align: center;
+    line-height: 30px;
+    display: block;
+    background:none;
+    border-radius:50px;
+    width: 60px;
+    height: 30px;
+    color: black;
+    font-size: 16px;
+}
+
+/* FQA */
+div.footuser{
+    text-align: center;
+    color: white;
+    position: fixed;
+    bottom: 10px;
+    left: 40%;
+    right: 40%;
+    font-size: 10px;
 }
