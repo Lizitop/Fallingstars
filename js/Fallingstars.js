@@ -18,9 +18,4 @@ $(document).ready(function(){
         $('.searchform').attr("action","https://www.google.com/search");
         $('span.google').addClass('baco');
     });
-
-    $("span.Wtclik").click(function(){
-        $('div.Wtdiv').addClass('Wtddivs');
-    });
-
 });
