@@ -31,12 +31,7 @@ div.Fallingstarsbody{
 }
 
 /* 天气 */
-div.Wtdiv{
-    display: none;
-}
-.Wtddivs{
-    display: block;
-}
+
 /* 搜索框盒子样式 */
 div.FallingstarsSrearch{
     text-align: center;
