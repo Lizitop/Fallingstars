@@ -20,17 +20,27 @@ div.Fallingstarsbox{
 
 /* 最大内容盒子样式 */
 div.Fallingstarsbody{
-    margin-top: 200px;
     position: fixed;
     width: 100%;
     height: 100%;
     right: 0px;
     bottom: 0px;
     top: 0px;
-    margin: auto
+    margin: auto;
 }
 
 /* 天气 */
+div.Wtdiv{
+    display: none;
+}
+
+/* Time */
+div.timediv{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
 
 /* 搜索框盒子样式 */
 div.FallingstarsSrearch{
@@ -39,11 +49,12 @@ div.FallingstarsSrearch{
     width: 80%;
     height: 320px;
     right: 0px;
-    bottom: 0px;
+    bottom:380px;
     top: 0px;
     left: 0px;
     margin: auto
 }
+
 /* 搜索框样式 */
 input.ipsearch{
     background:none;
@@ -53,9 +64,18 @@ input.ipsearch{
     text-align: center;
     border-radius: 50px;
     height: 2.9rem;
-    width: 80%;
+    width: 50%;
     box-shadow: 0 5px 15px -5px rgba(0,0,0,1);
 }
+
+/* 阿里图标库移入,点击更改图标颜色 */
+path:last-of-type:hover{
+    fill: #c66f35;
+}
+
+/* path:last-of-type:focus{
+    fill: #84c0e1;
+} */
 
 /* 去除type=search自带的清除内容样式 */
 input[type="search"]::-webkit-search-cancel-button{
@@ -66,9 +86,9 @@ input[type="search"]::-webkit-search-cancel-button{
 div.Searchengine{
     text-align: center;
     position: fixed;
-    width: 50%;
+    width: 120px;
     height: 0px;
-    bottom: 0px;
+    bottom: 280px;
     left: 0px;
     right: 0px;
     top: 0px;
@@ -77,20 +97,12 @@ div.Searchengine{
     justify-content: space-between;
 }
 
-div.Searchengine span{
-    margin: 10px;
-    text-align: center;
-    line-height: 30px;
-    display: block;
-    background:none;
-    border-radius:50px;
-    width: 60px;
-    height: 30px;
-    color: black;
-    font-size: 16px;
+.red{
+    background-color: red;
+    color: red;
 }
 
-/* FQA */
+/* Copyright 版权信息 */
 div.footuser{
     text-align: center;
     color: white;
